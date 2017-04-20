@@ -18,7 +18,8 @@ var plugins = [
   })
 ];
 var entry = {
-  'demo0-easing': './demos/demo0-easing/index.jsx'
+  'demo0-easing': './demos/demo0-easing/index.jsx',
+  'demo1-value-change': './demos/demo1-value-change/index.jsx'
 };
 
 if (process.env.NODE_ENV === 'development') {
