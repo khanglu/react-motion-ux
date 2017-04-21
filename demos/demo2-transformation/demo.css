@@ -10,20 +10,11 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  background-color: #1D1D1D;
+  background-color: #1d1d1d;
   display: flex;
   justify-content: center;
   align-items: center;
   display: -webkit-flex;
   -webkit-justify-content: center;
   -webkit-align-items: center;
-}
-
-#value-label {
-  text-align: center;
-  font-size: 4em;
-  font-weight: 400;
-  color: #E2E2E2;
-  font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-  margin: 1em 0;
 }
