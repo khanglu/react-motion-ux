@@ -19,6 +19,6 @@
   -webkit-align-items: center;
 }
 
-div {
+#value-label {
   font-size: 2em;
 }
