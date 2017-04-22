@@ -23,25 +23,27 @@ class Transformation extends Component {
 
   render () {
     const { width, height, radius } = this.state
-    const config = {stiffness: 200, damping: 33}
     return (
       <Motion 
         style={{
-          // these are motionValue.x/y/z that will be injected inside the child function
-          x: spring(width, config),
-          y: spring(height, config),
-          z: spring(radius, config)
+          /**
+           * These are motionValue.x/y/z that will be injected inside the child function
+           * Each value can have different config
+           */ 
+          mWidth: spring(width, {stiffness: 200, damping: 20}),
+          mHeight: spring(height, {stiffness: 200, damping: 17}),
+          mRadius: spring(radius, {stiffness: 200, damping: 30})
         }}
       >
         {
-          motionValue => 
+          motion => 
             <div 
               style={{
                 minHeight: '1px', // minHeight for creating an empty div with shape
                 backgroundColor: '#e2e2e2',
-                borderRadius: motionValue.z,
-                width: motionValue.x + 'px',
-                height: motionValue.y + 'px'
+                borderRadius: motion.mRadius,
+                width: motion.mWidth + 'px',
+                height: motion.mHeight + 'px'
               }}
               onClick={this.toggleTransformation}
             ></div>
