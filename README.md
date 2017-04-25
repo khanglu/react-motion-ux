@@ -1,2 +1,2 @@
 ## react-motion-ux
-A set of demos and implementations of [12 principles of UX in Motion](https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc) in React using [react-motion](https://github.com/chenglou/react-motion)
+A set of demos and implementations of [principles of UX in Motion](https://medium.com/ux-in-motion/creating-usability-with-motion-the-ux-in-motion-manifesto-a87a4584ddc) in React using [react-motion](https://github.com/chenglou/react-motion)
